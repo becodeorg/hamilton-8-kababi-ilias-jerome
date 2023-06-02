@@ -1,0 +1,26 @@
+%column-center-flex-start {
+    display: flex;
+    justify-content: center; 
+    align-items:flex-start; 
+    flex-direction: column;
+}
+
+%row-spacearound {
+    display: flex;
+    justify-content: space-around; 
+    flex-direction: row;
+}
+
+%column-center-center {
+    display: flex;
+    justify-content: center; 
+    align-items:center; 
+    flex-direction: column;
+}
+
+%row-center-center {
+    display: flex;
+    justify-content: center; 
+    align-items:center; 
+    flex-direction: column;
+}

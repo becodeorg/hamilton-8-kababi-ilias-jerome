@@ -1,0 +1,198 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap");
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+.footerinfo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hrspoon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer {
+  background-image: url("https://github.com/becodeorg/hamilton-8-kababi-ilias-jerome/blob/main/img/footer/img-ng-footer.jpg?raw=true");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 75vh;
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+footer ul, footer p {
+  color: rgb(150, 150, 150);
+  font-family: "Open Sans";
+  font-size: small;
+}
+footer ul li {
+  line-height: 200%;
+}
+footer h1 {
+  color: white;
+  margin-bottom: 30px;
+  font-family: "Cinzel";
+  font-size: larger;
+}
+
+.footerinfo .footerinfoicone {
+  color: #b5a172;
+  margin-right: 15px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-infos-sup {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 80%;
+  height: auto;
+  margin-top: 3%;
+}
+
+.footerinfo:nth-child(1),
+.footerinfo:nth-child(2),
+.footerinfo:nth-child(4) {
+  width: 15%;
+}
+
+.footerinfo:nth-child(3) {
+  width: 35%;
+}
+.footerinfo:nth-child(3) p {
+  padding-right: 25%;
+  margin-top: 0;
+}
+
+input[type=email] {
+  border: 1px solid #cccccc;
+  border-radius: 0px;
+  width: 250px;
+  height: 35px;
+  margin-top: 20px;
+}
+
+button[type=submit] {
+  background-color: rgb(181, 161, 115);
+  color: #ffffff;
+  border: solid 1px rgb(181, 161, 115);
+  border-radius: 0px;
+  height: 35px;
+  width: 35px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.footer-infos-down {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.footer-copyright {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px black solid;
+  font-size: small;
+}
+
+.footer-medias-list li {
+  display: inline;
+}
+.footer-medias-list button {
+  border-radius: 100px;
+  width: 1.75rem;
+  height: 1.75rem;
+  background-color: rgb(97, 97, 97);
+  border: 1px solid rgb(97, 97, 97);
+  text-align: center;
+}
+.footer-medias-list button:hover {
+  background-color: rgb(181, 161, 115);
+  border-color: rgb(181, 161, 115);
+}
+
+.hrspoon hr {
+  margin-top: 5%;
+  width: 80vw;
+  border-radius: 2px;
+  border: 0.5px solid rgb(150, 150, 150);
+  z-index: 1;
+  opacity: 0.5;
+}
+.hrspoon .spoon {
+  margin-top: -1.5em;
+  height: 5em;
+  width: auto;
+  margin-bottom: -1.5em;
+  z-index: 2;
+}
+
+/*# sourceMappingURL=styles.css.map */

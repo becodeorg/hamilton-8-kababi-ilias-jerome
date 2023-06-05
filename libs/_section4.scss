@@ -1,0 +1,130 @@
+.section4 {
+    display: flex;
+    justify-content: center; 
+    align-items:center; 
+    flex-direction: column;
+    background-color: #FAF6F0;
+}
+
+.section4-bread-bg-picture {
+    background-color: transparent;
+    width: 100%;
+    height:156%;
+    position: absolute;
+    display: flex;
+    justify-content: end; 
+    align-items:center; 
+    margin-left: 25%;
+    z-index: 2;
+}
+
+.section4-meat-bg-picture {
+    background-color: transparent;
+    width: 100%;
+    height:136%;
+    position: absolute;
+    display: flex;
+    justify-content: start; 
+    align-items:end; 
+    z-index: 1;
+}
+
+.section4-upper {
+    position: relative;
+    display: flex;
+    align-items:center; 
+    width: 100%;
+    height: 200px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+
+    .text-bg {
+        position: absolute;
+        text-align: start;
+        width: 100%;
+        font-family: 'Cinzel';
+        color: #f1e9de;
+        font-size: 1100%;
+        font-weight:bolder;
+        z-index: 4;
+    }
+
+    .section4titre {
+        text-align: center;
+        width: 100%;
+        z-index: 5;
+    
+    
+    
+        h2 {
+            font-family: 'Cinzel';
+            font-size: 40px;
+        }
+    
+        p {
+            font-family: "Open Sans";
+            font-weight: 300;
+        }
+    }
+}
+
+.section4-grid {
+    display: grid;
+    gap: 20px;
+    width: 80%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin-bottom: 25%;
+    z-index: 3;
+
+    .section4-carte {
+        display: flex;
+        justify-content: space-between; 
+        align-items:center; 
+        flex-direction: row;
+        background-color: #FFFFFF;
+        border: transparent 2px dashed;
+        border-radius: 5px;
+    
+        &:hover {
+            border: #c8a779 2px dashed;
+        }
+    }
+
+}
+
+.section4foodname {
+    display: flex;
+    justify-content: end; 
+    align-items:start; 
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+
+    h1 {
+        font-family: 'Forum';
+        font-size: x-large;
+    }
+
+    h2 {
+        font-family: 'Forum';
+        font-size: medium;
+    }
+}
+
+.section4price {
+    display: flex;
+    justify-content: end; 
+    align-items:end; 
+    flex-direction: column;
+    color: #c8a779;
+    font-family: 'Forum';
+    font-size: xx-large;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    margin-right: 5%;
+}
+
+
+

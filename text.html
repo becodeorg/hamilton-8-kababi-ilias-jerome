@@ -5,26 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/9236eb1d54.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="desktop">
             <img src="./img/logo/logo.png" alt="">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">page</a></li>
-                <li><a href="">Shop</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-            <P><i class="fa-regular fa-phone" style="color: #e5a50a;"></i>+012 (345) 6789</P>
+            <ul class="dropdownmenu">
+                <li><a href="#">Home <i class="fa-solid fa-chevron-down"></i></a>
+                  <ul>
+                    <li><a href="#">bonjour</a></li>
+                    <li><a href="#">bonsoir</a></li>
+                    <li><a href="#">bonjoir</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Page <i class="fa-solid fa-chevron-down"></i></a>
+                  <ul>
+                    <li><a href="#">bonjour</a></li>
+                    <li><a href="#">bonsoir</a></li>
+                    <li><a href="#">bonjoir</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Shop <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="#">bonjour</a></li>
+                        <li><a href="#">bonsoir</a></li>
+                        <li><a href="#">bonjoir</a></li>
+                      </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            <P class="navright"><i class="fa-solid fa-phone" style="color: #e5a50a;"></i>+012 (345) 6789</P>
             <button><a href="">BOOK A TABLE</a></button>
         </nav>
+        <nav class="mobile">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+            <img src="./img/logo/logo.png" alt="">
+            <ul class="dropdownmenu">
+                <li><a href="#">Home <i class="fa-solid fa-chevron-down"></i></a>
+                  <ul>
+                    <li><a href="#">bonjour</a></li>
+                    <li><a href="#">bonsoir</a></li>
+                    <li><a href="#">bonjoir</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Page <i class="fa-solid fa-chevron-down"></i></a>
+                  <ul>
+                    <li><a href="#">bonjour</a></li>
+                    <li><a href="#">bonsoir</a></li>
+                    <li><a href="#">bonjoir</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Shop <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul>
+                        <li><a href="#">bonjour</a></li>
+                        <li><a href="#">bonsoir</a></li>
+                        <li><a href="#">bonjoir</a></li>
+                      </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+        </nav>
         <section>
-            <P>BEST QUALITY FOODS</P>
-            <img src="./img/about-us/iconbgabout.png" alt="">
-            <button><a href="">EXPLORE OUR MENU</a></button>
+            <img src="./img/slider/img_bg2.png" alt="">
+            <P class="best">BEST<br>QUALITY<br>FOODS</P>
+            <button class="explore"><a href="">EXPLORE OUR MENU</a></button>
         </section>
     </header>
 </body>

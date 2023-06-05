@@ -1,0 +1,114 @@
+.section7 {
+    display: flex;
+    justify-content: center; 
+    align-items:center; 
+    flex-direction: column;
+}
+
+.section7-upper {
+    position: relative;
+    display: flex;
+    align-items:center; 
+    width: 100%;
+    height: 200px;
+    margin-top: 5%;
+
+    .text-bg {
+        position: absolute;
+        text-align: start;
+        width: 100%;
+        font-family: 'Cinzel';
+        color: #FAF6F0;
+        font-size: 1100%;
+        font-weight:bolder;
+        z-index: 1;
+    }
+
+    .section7titre {
+        text-align: center;
+        width: 100%;
+        z-index: 2;
+    
+    
+    
+        h2 {
+            font-family: 'Cinzel';
+            font-size: 40px;
+        }
+    
+        p {
+            font-family: "Open Sans";
+            font-weight: 300;
+        }
+    }
+}
+
+.section7articles {
+    display: flex;
+    justify-content: space-between; 
+    flex-direction: row;
+    align-items: flex-start;
+    width: 80%;
+
+}
+
+.article {
+    
+    width: 32%;
+    height: auto;
+    background-color: #FAF6F0;
+    margin-top: 3%;
+
+
+    li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    i {
+        vertical-align:auto;
+        margin-right: 5px;
+    }
+
+    h1 {
+       font-family: 'Forum';
+       font-size:x-large;
+    }
+
+    h1, ul, button {
+        margin-top: 7.5%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    button {
+        margin-bottom: 10%;
+        font-weight: 500;
+        background-color: #ffffff;
+        border: #ffffff 1px solid;
+        border-radius: 5px;
+        height: 50px;
+        width: 150px;
+
+        i {
+            margin-left: 5px;
+        }
+    }
+}
+
+.section7logo {
+
+    width: 80%;
+    
+    ul {
+        display: flex;
+        justify-content: space-around; 
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+
+    li {
+        display: inline;
+    }
+
+}

@@ -1,0 +1,166 @@
+
+
+footer {
+    @extend %column-center-center;
+    @include background-img-cover-center("https://github.com/becodeorg/hamilton-8-kababi-ilias-jerome/blob/main/img/footer/img-ng-footer.jpg?raw=true");   
+    
+    width: 100vw;
+    height: 75vh;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    ul, p {
+        color: rgb(150, 150, 150);
+        font-family: "Open Sans";
+        font-size: small;
+
+    }
+
+    ul {
+        li {
+            line-height: 200%;
+        }
+
+    }
+
+    h1 {
+        color: white;
+        margin-bottom: 30px;
+        font-family: 'Cinzel';
+        font-size: larger;
+        }
+}
+
+.footerinfo {
+    @extend %column-center-flex-start;
+
+    .footerinfoicone {
+        color:#b5a172;
+        margin-right: 15px;
+    }
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-infos-sup {
+    display: flex;
+    justify-content: space-between; 
+    flex-direction: row;
+    align-items: flex-start;
+    width: 80%;
+    height: auto;
+    margin-top: 3%;
+
+}
+
+.footerinfo:nth-child(1),
+.footerinfo:nth-child(2),
+.footerinfo:nth-child(4) {
+    width: 15%;
+}
+
+.footerinfo:nth-child(3) {
+    width: 35%;
+
+    p {
+        padding-right: 25%;
+        margin-top: 0;
+    }
+
+}
+
+input[type="email"] {
+    border: 1px solid #cccccc;
+    border-radius: 0px;
+    width: 250px;
+    height: 35px;
+    margin-top: 20px;    
+  }
+
+  button[type="submit"] {
+    background-color: rgb(181, 161, 115);
+    color: #ffffff;
+    border: solid 1px rgb(181, 161, 115);
+    border-radius: 0px;
+    height: 35px;
+    width: 35px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+
+.footer-infos-down {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.footer-copyright {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px black solid;
+    font-size:small;
+}
+
+.footer-medias-list {
+
+
+
+    li {
+        display: inline;
+        margin-left: 5px;
+    }
+
+    button {
+        border-radius: 100px;
+        width: 1.75rem;
+        height: 1.75rem;
+        background-color: rgb(97, 97, 97);
+        border: 1px solid rgb(97, 97, 97);
+        text-align: center;
+
+        &:hover {
+            background-color: rgb(181, 161, 115);
+            border-color: rgb(181, 161, 115);
+        }
+    }
+}
+
+
+.hrspoon {
+
+    @extend %row-center-center;
+
+    hr { 
+        margin-top: 5%;
+        width: 80vw;
+        border-radius: 2px;
+        border: 0.5px solid rgb(150, 150, 150) ;
+        z-index: 1;
+        opacity: 0.5;
+    }
+
+    .spoon {
+        margin-top: -1.5em;
+        height: 5em;
+        width: auto;
+        margin-bottom: -1.5em;
+        z-index: 2;
+    
+    }
+    
+
+
+}
+
+

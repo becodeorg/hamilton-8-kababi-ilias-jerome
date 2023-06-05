@@ -1,0 +1,68 @@
+.section6 {
+    @include background-img-cover-center("https://github.com/becodeorg/hamilton-8-kababi-ilias-jerome/blob/main/img/our-chefs/imgbg-ourchefs.jpg?raw=true");   
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center; 
+    align-items:center; 
+    flex-direction: column;
+}
+
+.section6-upper {
+    position: relative;
+    display: flex;
+    align-items:center; 
+    width: 100%;
+    height: 200px;
+    margin-top: 5%;
+
+    .text-bg {
+        position: absolute;
+        text-align: start;
+        width: 100%;
+        font-family: 'Cinzel';
+        color: #101010;
+        font-size: 1100%;
+        font-weight:bolder;
+        z-index: 1;
+    }
+
+    .section6titre {
+        text-align: center;
+        width: 100%;
+        z-index: 2;
+    
+    
+    
+        h2 {
+            font-family: 'Cinzel';
+            font-size: 40px;
+        }
+    
+        p {
+            font-family: "Open Sans";
+            font-weight: 300;
+        }
+    }
+}
+
+.chefs {
+
+    margin-top: 3%;
+    margin-bottom: 15%;
+    width: 80%;
+
+    
+    ul {
+        display: flex;
+        justify-content: space-between; 
+
+    }
+
+    li {
+        display: inline;
+
+        img {
+            width: 92%
+        };
+    }
+}

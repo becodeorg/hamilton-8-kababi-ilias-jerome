@@ -83,12 +83,18 @@
 
     button {
         margin-bottom: 10%;
-        font-weight: 500;
+        font-weight: 600;
         background-color: #ffffff;
         border: #ffffff 1px solid;
         border-radius: 5px;
         height: 50px;
         width: 150px;
+
+        &:hover {
+            background-color: rgb(232, 177, 119);
+            border: #C19769 1px solid;
+            color: #ffffff;
+        }
 
         i {
             margin-left: 5px;

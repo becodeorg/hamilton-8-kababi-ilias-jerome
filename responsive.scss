@@ -1,40 +1,145 @@
 @import url(./mixins.scss);
 @import url(./variables.scss);
 
-header{
-    .desktop{
-        display: none;
+
+@media only screen and (max-width: 768px) {
+  header{
+    section{
+  .best{
+    font-size: 75px;
+  }}}
+  .book{
+    display: none;
+  }
+  #logo {
+    display: block;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    float: none;
+  }
+
+  nav {
+    display: block;
+    margin: 0;
+  }
+
+  .toggle + a, .menu {
+    display: none;
+  }
+
+  .toggle {
+    display: block;
+    background-color: #3effec;
+    padding: 14px 20px;
+    color: #FFF;
+    font-size: 17px;
+    text-decoration: none;
+    border: none;
+
+    &:hover {
+      background-color: #000000;
     }
-    .mobile{
+  }
+
+ 
+  [id^=drop]:checked + ul {
+    display: block;
+  }
+
+  nav {
+    ul {
+      li {
         display: block;
-        position: relative;
-        top: 50px;
-        left: 50px;
-  
-        z-index: 1;
-  
-        -webkit-user-select: none;
-        user-select: none;
-        a{
-            text-decoration: none;
-            color: #232323;
-  
-            transition: color 0.3s ease;
+        width: 100%;
+      }
+
+      ul {
+        .toggle, a {
+          padding: 0 40px;
         }
-        input{
-            display: block;
-            width: 40px;
-            height: 32px;
-            position: absolute;
-            top: -7px;
-            left: -5px;
-  
-            cursor: pointer;
-  
-            opacity: 0; /* hide this */
-            z-index: 2; /* and place it over the hamburger */
-  
-            -webkit-touch-callout: none;
+
+        ul a {
+          padding: 0 80px;
         }
+      }
     }
+
+    a:hover {
+      background-color: #ff4949;
+    }
+
+    ul {
+      ul ul a {
+        background-color: #ffc5c5;
+      }
+
+      li ul li .toggle {
+        padding: 14px 20px;
+        color: #FFF;
+        font-size: 17px;
+      }
+
+      ul {
+        a, ul a {
+          padding: 14px 20px;
+          color: #FFF;
+          font-size: 17px;
+        }
+      }
+
+      li ul li .toggle {
+        background-color: #ff7d7d;
+      }
+
+      ul {
+        a {
+          background-color: #fc2727;
+        }
+
+        float: none;
+        position: static;
+        color: #ffffff;
+
+        li:hover > ul {
+          display: none;
+        }
+      }
+
+      li:hover > ul {
+        display: none;
+      }
+
+      ul {
+        li {
+          display: block;
+          width: 100%;
+        }
+
+        ul li {
+          position: static;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 475px) {
+  nav ul li {
+    display: block;
+    width: 94%;
+  
+  }
+  
+  nav{
+    display: block;
+    .book{
+      display: none;
+    }
+  }
+  header{
+    section{
+  .best{
+    font-size: 50px;
+  }}}
 }

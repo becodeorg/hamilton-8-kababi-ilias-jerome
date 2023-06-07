@@ -22,86 +22,168 @@
 }
 
 header{
-    height: 100vh;
+    min-height: 100vh;
     background-image: linear-gradient(90deg, rgba(0,0,0,1) 15%, rgba(0,0,0,0) 100%), url("./img/slider/img_bg_slider_home01.jpg");
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: cover;
+    background-position: center top;
     color: white;
-    .mobile{
-        display: none;
+a {
+  color: #FFF;
+}
+
+#container {
+  margin: 0 auto;
+  max-width: 890px;
+}
+
+.toggle, [id^=drop] {
+  display: none;
+}
+nav {
+  margin: 0;
+  padding: 0;
+  background-color: #254441;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+#logo {
+  display: block;
+  padding: 0 30px;
+  float: left;
+  font-size: 20px;
+  line-height: 60px;
+}
+nav {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  ul {
+    float: left;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+
+    li {
+      margin: 0px;
+      display: inline-block;
+      float: left;
+      background-color: #254441;
     }
-    a{
-        color: white;
+  }
+
+  a {
+    display: block;
+    padding: 14px 20px;
+    color: #FFF;
+    font-size: 17px;
+    text-decoration: none;
+  }
+
+  ul li ul li:hover {
+    background: #ee3f3f;
+  }
+
+  a:hover {
+    background-color:   #f59999;
+  }
+
+  ul {
+    ul {
+      display: none;
+      position: absolute;
+      top: 60px;
     }
-    .desktop{
-        position: sticky;
-        align-items: center;
-        display: flex;
-        img{
-            margin: 2% 4%;
-        }
-        button{
-            background-color: rgb(200, 169, 106);
-            padding: 1% 2%;
-            text-align: center;
-            border: none;
-            border-radius: 5px;
-        }
-        .dropdownmenu {
-            display: flex;
-            width: 50%;
-            ul{
-                display: none;
-                a:hover {
-                    background-color: #ffffff48;
-                  }
-            }
-            a {
-                display: block;
-                width: 100px;
-                height: 35px;
-                line-height: 35px;
-                color: #fff;
-                text-align: center;
-              }
-              li{
-                position: relative;
-              }
-              li:hover{
-                ul {
-                display: block;
-                position: absolute;
-                top: 41px;
-                left: 0px;
-                z-index: 100;
-                }
-            }
-          }
-        a:hover{
-            color: rgb(200, 169, 106);
-        }
-        .navright{
-            margin: 0 2% 0 0;
-        }
+
+    li:hover > ul {
+      display: inherit;
     }
-    .explore{
-        border: solid 1px white;
-        font-size: small;
-        border-radius: 5px;
-        padding: 1% 2%;
-        margin-left: 10%;
-        margin-top: 2.5%;
+
+    ul {
+      li {
+        width: 170px;
+        float: none;
+        display: list-item;
+        position: relative;
+      }
+
+      ul li {
+        position: relative;
+        top: -60px;
+        left: 170px;
+      }
     }
+  }
+  .book{
+    padding-left: 150px;
+    display: block;
+    justify-content: space-between;
+    button{
+      margin-left: 30px;
+    }
+  }
+li > a {
+  &:after {
+    content: ' +';
+  }
+
+  &:only-child:after {
+    content: '';
+  }
+}
+}
+.slider{
+  width: 12.5vw;
+  position: relative;
+  top: 20vh;
+  left: 35vw;
+}
     section{
-        img{
-            width: 10%;
-            margin-left: 30%;
-            margin-top: 3%;
-        }
+      position: relative;
+      left: 15vw;
+      top: -10vh;
+      width: 70vw;
         .best{
-            font-size: 500%;
-            margin-left: 10%;
-            margin-top: -7%;
+            font-size: 100px;
+            width: 40vw;
         }
+        .explore{
+          border: solid 1px white;
+          font-size: small;
+          border-radius: 5px;
+          padding: 1% 2%;
+          margin-top: 2vh;
+      } 
     }
 }
+
+
+/*main{
+    .category{
+        text-align: center;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            margin: 5px;
+            li{
+                a{
+                    button{
+                        background-color: greenyellow;
+                        height: 10rem;
+                        justify-content: space-between;
+                        .cat-img{
+                            width: 50px;
+                            margin: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}*/

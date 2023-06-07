@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;600;700;800;900&display=swap");
@@ -743,7 +742,8 @@ button i {
   margin-top: 2.5%;
   margin-bottom: 2.5%;
   margin-right: 5%;
-=======
+}
+
 * {
   margin: 0;
 }
@@ -763,89 +763,250 @@ button i {
 }
 
 header {
-  height: 100vh;
+  min-height: 100vh;
   background-image: linear-gradient(90deg, rgb(0, 0, 0) 15%, rgba(0, 0, 0, 0) 100%), url("./img/slider/img_bg_slider_home01.jpg");
   background-repeat: no-repeat;
-  background-size: 100vw;
+  background-size: cover;
+  background-position: center top;
   color: white;
-}
-header .mobile {
-  display: none;
 }
 header a {
-  color: white;
+  color: #FFF;
 }
-header .desktop {
-  position: sticky;
-  align-items: center;
-  display: flex;
+header #container {
+  margin: 0 auto;
+  max-width: 890px;
 }
-header .desktop img {
-  margin: 2% 4%;
-}
-header .desktop button {
-  background-color: rgb(200, 169, 106);
-  padding: 1% 2%;
-  text-align: center;
-  border: none;
-  border-radius: 5px;
-}
-header .desktop .dropdownmenu {
-  display: flex;
-  width: 50%;
-}
-header .desktop .dropdownmenu ul {
+header .toggle, header [id^=drop] {
   display: none;
 }
-header .desktop .dropdownmenu ul a:hover {
-  background-color: rgba(255, 255, 255, 0.2823529412);
+header nav {
+  margin: 0;
+  padding: 0;
+  background-color: #254441;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
 }
-header .desktop .dropdownmenu a {
+header #logo {
   display: block;
-  width: 100px;
-  height: 35px;
-  line-height: 35px;
-  color: #fff;
-  text-align: center;
+  padding: 0 30px;
+  float: left;
+  font-size: 20px;
+  line-height: 60px;
 }
-header .desktop .dropdownmenu li {
+header nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+header nav ul {
+  float: left;
+  padding: 0;
+  margin: 0;
+  list-style: none;
   position: relative;
 }
-header .desktop .dropdownmenu li:hover ul {
+header nav ul li {
+  margin: 0px;
+  display: inline-block;
+  float: left;
+  background-color: #254441;
+}
+header nav a {
   display: block;
+  padding: 14px 20px;
+  color: #FFF;
+  font-size: 17px;
+  text-decoration: none;
+}
+header nav ul li ul li:hover {
+  background: #ee3f3f;
+}
+header nav a:hover {
+  background-color: #f59999;
+}
+header nav ul ul {
+  display: none;
   position: absolute;
-  top: 41px;
-  left: 0px;
-  z-index: 100;
+  top: 60px;
 }
-header .desktop a:hover {
-  color: rgb(200, 169, 106);
+header nav ul li:hover > ul {
+  display: inherit;
 }
-header .desktop .navright {
-  margin: 0 2% 0 0;
+header nav ul ul li {
+  width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
 }
-header .explore {
+header nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 170px;
+}
+header nav .book {
+  padding-left: 150px;
+  display: block;
+  justify-content: space-between;
+}
+header nav .book button {
+  margin-left: 30px;
+}
+header nav li > a:after {
+  content: " +";
+}
+header nav li > a:only-child:after {
+  content: "";
+}
+header .slider {
+  width: 12.5vw;
+  position: relative;
+  top: 20vh;
+  left: 35vw;
+}
+header section {
+  position: relative;
+  left: 15vw;
+  top: -10vh;
+  width: 70vw;
+}
+header section .best {
+  font-size: 100px;
+  width: 40vw;
+}
+header section .explore {
   border: solid 1px white;
   font-size: small;
   border-radius: 5px;
   padding: 1% 2%;
-  margin-left: 10%;
-  margin-top: 2.5%;
-}
-header section img {
-  width: 10%;
-  margin-left: 30%;
-  margin-top: 3%;
-}
-header section .best {
-  font-size: 500%;
-  margin-left: 10%;
-  margin-top: -7%;
+  margin-top: 2vh;
 }
 
-@media only screen and (min-width 700px) {
-  @import url("./responsive.scss");
->>>>>>> origin/ilias
+/*main{
+    .category{
+        text-align: center;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            margin: 5px;
+            li{
+                a{
+                    button{
+                        background-color: greenyellow;
+                        height: 10rem;
+                        justify-content: space-between;
+                        .cat-img{
+                            width: 50px;
+                            margin: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}*/
+@media only screen and (max-width: 768px) {
+  header section .best {
+    font-size: 75px;
+  }
+  .book {
+    display: none;
+  }
+  #logo {
+    display: block;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    float: none;
+  }
+  nav {
+    display: block;
+    margin: 0;
+  }
+  .toggle + a, .menu {
+    display: none;
+  }
+  .toggle {
+    display: block;
+    background-color: #3effec;
+    padding: 14px 20px;
+    color: #FFF;
+    font-size: 17px;
+    text-decoration: none;
+    border: none;
+  }
+  .toggle:hover {
+    background-color: #000000;
+  }
+  [id^=drop]:checked + ul {
+    display: block;
+  }
+  nav ul li {
+    display: block;
+    width: 100%;
+  }
+  nav ul ul .toggle, nav ul ul a {
+    padding: 0 40px;
+  }
+  nav ul ul ul a {
+    padding: 0 80px;
+  }
+  nav a:hover {
+    background-color: #ff4949;
+  }
+  nav ul ul ul a {
+    background-color: #ffc5c5;
+  }
+  nav ul li ul li .toggle {
+    padding: 14px 20px;
+    color: #FFF;
+    font-size: 17px;
+  }
+  nav ul ul a, nav ul ul ul a {
+    padding: 14px 20px;
+    color: #FFF;
+    font-size: 17px;
+  }
+  nav ul li ul li .toggle {
+    background-color: #ff7d7d;
+  }
+  nav ul ul {
+    float: none;
+    position: static;
+    color: #ffffff;
+  }
+  nav ul ul a {
+    background-color: #fc2727;
+  }
+  nav ul ul li:hover > ul {
+    display: none;
+  }
+  nav ul li:hover > ul {
+    display: none;
+  }
+  nav ul ul li {
+    display: block;
+    width: 100%;
+  }
+  nav ul ul ul li {
+    position: static;
+  }
+}
+@media all and (max-width: 475px) {
+  nav ul li {
+    display: block;
+    width: 94%;
+  }
+  nav {
+    display: block;
+  }
+  nav .book {
+    display: none;
+  }
+  header section .best {
+    font-size: 50px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

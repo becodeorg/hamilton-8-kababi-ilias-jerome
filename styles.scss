@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "libs/_minireset";
 @import "libs/_placeholders";
 @import "libs/_mixins";
@@ -10,3 +11,10 @@
 
 
 
+=======
+@use "./page.scss";
+
+@media only screen and (min-width 700px) {
+    @import url("./responsive.scss");
+}
+>>>>>>> origin/ilias

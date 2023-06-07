@@ -214,7 +214,7 @@ button[type=submit] {
 }
 .section7-upper .text-bg {
   position: absolute;
-  text-align: start;
+  text-align: center;
   width: 100%;
   font-family: "Cinzel";
   color: #FAF6F0;
@@ -249,6 +249,9 @@ button[type=submit] {
   height: auto;
   background-color: #FAF6F0;
   margin-top: 3%;
+}
+.article img {
+  width: 100%;
 }
 .article li {
   display: inline;
@@ -287,10 +290,14 @@ button[type=submit] {
 
 .section7logo {
   width: 80%;
+  display: flex;
+  flex-direction: row;
 }
 .section7logo ul {
+  width: 50%;
   display: flex;
   justify-content: space-around;
+  flex-direction: row;
   margin-top: 5%;
   margin-bottom: 10%;
 }
@@ -298,6 +305,87 @@ button[type=submit] {
   display: inline;
 }
 
+@media (max-width: 928px) {
+  .section7-upper .text-bg {
+    font-size: 700%;
+    text-align: center;
+    color: #FAF6F0;
+  }
+  .section7articles {
+    width: 90%;
+  }
+  .section7articles .article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .section7articles .article ul {
+    margin-top: 7.5%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .section7articles .article h1 {
+    font-size: large;
+    text-align: center;
+  }
+  .section7articles .article button {
+    width: 100px;
+  }
+  .section7articles .article .section7-button {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 7.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .section7articles .article .section7credit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .section7logo img {
+    width: 75%;
+  }
+}
+@media (max-width: 425px) {
+  .section7-upper .text-bg {
+    font-size: 400%;
+    text-align: center;
+  }
+  .section7articles {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .section7articles .article {
+    width: 70%;
+  }
+  .section7logo {
+    width: 70%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section7logo img {
+    width: 80%;
+  }
+  .section7logo ul {
+    width: 100%;
+  }
+  .section7logo li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.33%;
+  }
+}
 .section6 {
   background-image: url("https://github.com/becodeorg/hamilton-8-kababi-ilias-jerome/blob/main/img/our-chefs/imgbg-ourchefs.jpg?raw=true");
   background-size: cover;
@@ -330,6 +418,8 @@ button[type=submit] {
 .section6-upper .section6titre {
   text-align: center;
   width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
   z-index: 2;
 }
 .section6-upper .section6titre h2 {
@@ -342,6 +432,8 @@ button[type=submit] {
 }
 
 .chefs {
+  display: flex;
+  flex-direction: row;
   margin-top: 3%;
   margin-bottom: 15%;
   width: 80%;
@@ -351,12 +443,52 @@ button[type=submit] {
   justify-content: space-between;
 }
 .chefs li {
-  display: inline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .chefs li img {
-  width: 92%;
+  width: 95%;
 }
 
+@media (max-width: 928px) {
+  .section6-upper .text-bg {
+    font-size: 600%;
+    text-align: center;
+  }
+}
+@media (max-width: 425px) {
+  .section6-upper .text-bg {
+    font-size: 400%;
+    text-align: center;
+  }
+  .section6-upper .section6titre h2 {
+    font-size: 250%;
+  }
+  .chefs {
+    width: 70%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .chefs img {
+    width: 100%;
+  }
+  .chefs ul {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .chefs li {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+}
 .section5 {
   display: flex;
   justify-content: center;
@@ -464,6 +596,37 @@ button[type=submit] {
   background-position: center;
 }
 
+button {
+  background-color: #FFFFFF;
+  border: 1px solid rgb(203, 203, 203);
+  border-radius: 5px;
+  font-family: "Open sans";
+  height: 50px;
+  width: 200px;
+  margin-bottom: 25%;
+}
+button i {
+  margin-left: 10px;
+}
+
+@media (max-width: 928px) {
+  .section5-upper .text-bg {
+    font-size: 600%;
+    text-align: center;
+  }
+}
+@media (max-width: 425px) {
+  .section5-upper .text-bg {
+    font-size: 400%;
+    text-align: center;
+  }
+  .section5-upper .section5titre h2 {
+    font-size: 250%;
+  }
+  .section5-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .section4 {
   display: flex;
   justify-content: center;

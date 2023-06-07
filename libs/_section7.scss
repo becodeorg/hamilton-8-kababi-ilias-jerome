@@ -15,7 +15,7 @@
 
     .text-bg {
         position: absolute;
-        text-align: start;
+        text-align: center;
         width: 100%;
         font-family: 'Cinzel';
         color: #FAF6F0;
@@ -59,6 +59,9 @@
     background-color: #FAF6F0;
     margin-top: 3%;
 
+    img {
+        width: 100%;
+    }
 
     li {
         display: inline;
@@ -105,10 +108,14 @@
 .section7logo {
 
     width: 80%;
+    display: flex;
+    flex-direction: row;
     
     ul {
+        width: 50%;
         display: flex;
         justify-content: space-around; 
+        flex-direction: row;
         margin-top: 5%;
         margin-bottom: 10%;
     }
@@ -118,3 +125,122 @@
     }
 
 }
+
+@media (max-width: 928px) {
+    
+    .section7-upper {
+    
+        .text-bg {
+        font-size: 700%;
+        text-align: center;
+        color: #FAF6F0;
+        }
+    } 
+    
+    .section7articles {
+
+        width: 90%;
+
+
+        .article {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            ul,  {
+                margin-top: 7.5%;
+                margin-left: 0%;
+                margin-right: 0%;
+            }
+
+            h1 {
+                font-size: large;
+                text-align: center;
+            }
+
+            button {
+                width: 100px;
+            }
+
+            .section7-button {
+                width: 100%;
+                margin-top: 5%;
+                margin-bottom: 7.5%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .section7credit {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+
+        }
+
+
+    }
+
+    .section7logo {
+
+        img {
+            width: 75%;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+
+    .section7-upper {
+    
+        .text-bg {
+        font-size: 400%;
+        text-align: center;
+        }
+    } 
+
+    .section7articles {
+        display: flex;
+        justify-content: center; 
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+
+    .article {
+
+        width: 70%;
+        }
+    }
+
+    .section7logo {
+        width: 70%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 80%
+        }
+
+        ul {
+            width: 100%;
+        }
+
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 33.33%;
+
+        }
+
+    }
+}
+

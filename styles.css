@@ -217,7 +217,7 @@ button[type=submit] {
   text-align: center;
   width: 100%;
   font-family: "Cinzel";
-  color: #FAF6F0;
+  color: #fdf6ec;
   font-size: 1100%;
   font-weight: bolder;
   z-index: 1;
@@ -226,6 +226,8 @@ button[type=submit] {
   text-align: center;
   width: 100%;
   z-index: 2;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 .section7-upper .section7titre h2 {
   font-family: "Cinzel";
@@ -309,7 +311,7 @@ button[type=submit] {
   .section7-upper .text-bg {
     font-size: 700%;
     text-align: center;
-    color: #FAF6F0;
+    color: white;
   }
   .section7articles {
     width: 90%;
@@ -625,6 +627,17 @@ button i {
   }
   .section5-grid {
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin-bottom: 10%;
+    gap: 10px;
+  }
+  .section5-grid .section5-carte:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .section5-grid .section5-carte:nth-child(6) {
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 }
 .section4 {
